@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Canelita. 💌 </title>
+    </script>
+<style>
+    body {
+        background: linear-gradient(to right, #d0eeeb, #dbdfed), url('img/meGusta.png'); /* Gradiente de fondo y ruta de la imagen de fondo */
+        background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+        background-position: center; /* Centra la imagen de fondo */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+.container {
+    text-align: center;
+    background-color: rgb(212, 231, 238);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(115, 66, 66, 0.2);
+    width: 300px; /* Ancho fijo para el contenedor */
+}
+
+#capibara {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: 100px; /* Mantiene la proporción */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Asegura que la imagen cubra el área */
+    margin-bottom: 1rem;
+    border: 5px solid #f3f3f3; /* Borde dorado */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #e6b0d0; /* Color de borde al enfocar */
+    outline: none; /* Elimina el contorno por defecto */
+}
+
+button {
+    padding: 0.7rem;
+    background-color: #82e5bd7f; /* Color de fondo del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #bef5c5; /* Color de fondo al pasar el mouse */
+}
+
+#message {
+    margin-top: 1rem;
+    color: red;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hola mi amor, espero te guste. 💕 </h1>
+        <img id="capibara" src="Feliz dia/sii.png" />
+        <form id="loginForm">
+    
+            <button type="button" onclick="playVideo()">Click me !!</button> 
+            <video id="myVideo" width="320" height="240" style="display:none;">
+                <source src="Feliz dia/Feliz dia.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <script>
+                function playVideo() {
+                    var video = document.getElementById("myVideo");
+                    video.style.display = "block";
+                    video.play();
+                }
+            </script>
+        </form>
+        <p id="message"></p>
+    </div>
+    </script>
+    
+</body>
+</html>
